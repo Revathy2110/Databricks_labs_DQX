@@ -7,6 +7,9 @@ dbutils.library.restartPython()
 
 # COMMAND ----------
 
+# MAGIC %md
+# MAGIC **Sample data 1**
+
 df = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("dbfs:/FileStore/shared_uploads/revathy.s@diggibyte.com/tmp/*.csv")
 
 # COMMAND ----------
@@ -182,7 +185,7 @@ display(quarantine)
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC **Sample 2**
+# MAGIC **Sample data 2**
 
 # COMMAND ----------
 
