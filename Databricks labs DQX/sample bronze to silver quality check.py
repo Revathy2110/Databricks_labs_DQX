@@ -369,11 +369,3 @@ display(silver)
 
 display(quarantine)
 
-# COMMAND ----------
-
-# MAGIC %md
-# MAGIC ****
-
-# COMMAND ----------
-
-df = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("dbfs:/FileStore/shared_uploads/revathy.s@diggibyte.com/tmp/customer_4-1.txt")
